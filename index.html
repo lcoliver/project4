@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>An Emerging Sport</title>
+    
+    
+   
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3mp0i7iP7cVOQ5HxgzV_vAO-HnfZ5wTk">
+    </script>
+    <script src= "js/maps.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+      <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="js/instagram.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    
+    <!--<script src="js/tweetLinkIt.js"></script>-->
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+    <div id="header" class="col-xs-12">
+        <h1>Women's Rugby</h1>
+    </div>
+ </div>
+  
+  <div class="row">
+    <div class="col-xs-12">
+        <h2>An Emerging Sport</h2>
+        <p>Women's rugby has progressed in leaps and bound over the past decade in the United States. Often compared to the growth of women's soccer, rugby is steadily gaining popularity and emerging as a potential new favorite pastime for Americans, as well as a means of empowerment for women specifically. The sport is considered one of the most egalitarian sports today, with all rules and equipment being the same for men and women. The sport encourages women to participate in an aggressive role that many women find to be liberating, though new and strange at first. Women's rugby is currently classified as an NCAA emerging sport and currently there are 13 full varsity teams in the country. Check below to learn more about the current varsity teams and what is going on in the world of women's rugby on social media.</p>
+    <h2>Varsity Teams in the U.S.</h2>
+    <p>Click a school's logo to learn more.</p>
+    </div>
+  </div>  
+    
+ <div class="row">
+        <div id="map" class="col-xs-12 col-md-8">
+            
+<div id="map-canvas"></div>
+        </div>
+            <iframe name="myiframe" src="twitter.php" id="twitter" class="col-xs-12 col-md-4"></iframe>
+        </div>
+ 
+ <div class="row">
+    <div class="transp">
+    <div class="col-xs-12" id="insta">
+        <h2>Instagram #wrugby</h2>
+        
+        <script type="text/javascript">
+        var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'wrugby',
+        clientId: '72e36d3960de481c99c55032a4856f86',
+        template: '<a href="{{link}}"><img style="padding:4px; display:inline-block" src="{{image}}" /></a>'
+        });
+            feed.run();
+        </script>
+        
+        <div id="instafeed"></div>
+        <!--<div id="results"></div>
+
+        <a href="http://jelled.com/instagram/lookup-user-id">Find user id</a>-->
+    </div>
+    </div>
+ </div>
+</div>
+
+</body>
+</html>
